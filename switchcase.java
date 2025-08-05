@@ -27,6 +27,8 @@ public class Main {
             case 6:
                 System.out.println("SATURDAY");
                 break;
+            default:
+                System.out.println("invalid data");
         }
     }
 }
