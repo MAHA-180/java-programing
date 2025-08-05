@@ -23,6 +23,10 @@ public class Main {
                 break;
             case 5:
                 System.out.println("FRIDAY");
+                break;
+            case 6:
+                System.out.println("SATURDAY");
+                break;
         }
     }
 }
