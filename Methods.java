@@ -142,4 +142,38 @@ Enter second number: 5
 Enter operation (+, -, *): *
 Result: 25
 
+#SNAP LOGIN
+import java.util.Scanner;
+
+public class Main {
+
+    public static boolean snapChatLogin(String username, String password) {
+        return username.equals("snapuser") && password.equals("snap@123");
+    }
+
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+
+        System.out.println("Enter the Snapchat username:");
+        String username = data.nextLine();
+
+        System.out.println("Enter the  password:");
+        String password = data.nextLine();
+
+        if (snapChatLogin(username, password)) {
+            System.out.println("Snapchat login successful.");
+        } else {
+            System.out.println("Snapchat login failed.");
+        }
+
+        data.close();
+    }
+}
+OUTPUT:
+Enter the Snapchat username:
+snapuser
+Enter the  password:
+snap@123
+Snapchat login successful.
+
 
